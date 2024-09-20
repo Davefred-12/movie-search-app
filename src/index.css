@@ -1,0 +1,54 @@
+/* index.css */
+
+/* Default theme (initial light state) */
+:root {
+  --bg-color: #ffffff; /* White background */
+  --text-color: #000000; /* Black text */
+  --hover-color: #ddd;  /* Default hover color */
+}
+
+/* Dark theme */
+.dark-theme {
+  --bg-color: #000000; /* Black background */
+  --text-color: #ffffff; /* White text */
+  --hover-color: #555;   /* Dark hover color */
+}
+
+/* Apply the theme to the body and other global elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+h1, h2, h3, h4, h5, h6, p, div, a {
+  color: var(--text-color); /* Ensure text color is updated */
+}
+
+/* Ensure links inherit text color */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--hover-color); /* Update hover color for links */
+}
+
+/* Style for the theme toggle button */
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: var(--hover-color);
+}

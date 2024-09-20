@@ -1,0 +1,172 @@
+/* Base styling for the navbar */
+.navbar {
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the entire navbar content */
+    padding: 1rem 2rem;
+    color: white;
+    position: fixed;
+    width: 100%;
+  }
+
+     /* Add animation for changing background color */
+.navbar {
+    animation: changeBackground 10s infinite alternate;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: purple;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: orange;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+/* Navbar.css */
+.navbar {
+    background-color: var(--bg-color); /* Use global background color */
+    color: var(--text-color); /* Use global text color */
+    /* Other styles... */
+  }
+  
+  .nav-link {
+    color: var(--text-color); /* Ensure text color is consistent */
+  }
+  
+  .nav-link:hover {
+    color: var(--hover-color); /* Ensure hover color is consistent */
+  }
+  
+.fa-home{
+    color: green;
+  }
+  .fa-search{
+    color: rgb(255, 255, 255);
+  }
+  .fa-film{
+    color: red;
+  }
+  .fa-tv{
+    color: yellow;
+  }
+  .fa-play{
+    color:blue;
+  }
+  
+  /* Styling for logo */
+  .logo {
+    position: absolute; /* Keep logo fixed to the left */
+    left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 10vh;
+    width: 6vw;
+    margin-right: -.5rem;
+  }
+  
+  .app-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: .2em;
+  }
+  
+  /* Center the navigation links */
+  .nav-center {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  /* Basic nav-link styling */
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link i {
+    margin-right: 0.5rem;
+  }
+  
+  .nav-link:hover {
+    color: #ddd;
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown directly below the nav item */
+    left: 0;
+    background-color: #444;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure dropdown is above other content */
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+  
+  /* Show dropdown on hover */
+  .nav-link:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Search dropdown styling */
+  .search-link:hover .search-dropdown {
+    display: flex;
+  }
+  
+  .search-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  
+  .search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

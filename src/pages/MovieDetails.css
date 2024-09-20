@@ -1,0 +1,86 @@
+/* Base styles for MovieDetails */
+.movie-details {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .movie-details img.movie-poster {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .movie-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .movie-details p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: red;
+  }
+  
+  .movie-actions {
+    margin-top: 20px;
+  }
+  
+  .download-btn,
+  .stream-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .download-btn {
+    background-color: #4caf50;
+  }
+  
+  .stream-btn {
+    background-color: #2196f3;
+  }
+  
+  /* Light Theme */
+  .movie-details.light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .movie-details.light a.download-btn,
+  .movie-details.light a.stream-btn {
+    color: #fff;
+  }
+  
+  /* Dark Theme */
+  .movie-details.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .movie-details.dark a.download-btn,
+  .movie-details.dark a.stream-btn {
+    color: #fff;
+  }
+  .youtube-playlist {
+    margin-top: 20px;
+  }
+  
+  .youtube-video {
+    margin-bottom: 20px;
+  }
+  
+  .youtube-video h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
